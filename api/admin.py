@@ -1,6 +1,15 @@
 from django.contrib import admin
 
 # Register your models here.
-from api.models import User
+from django.apps import apps
+from api.models import User, Tickets, UserTickets
 
-admin.site.register(User)
+# admin.site.register(User,Tickets,UserTickets)
+
+models = apps.get_models()
+
+for model in models:
+    try:
+        admin.site.register(model)
+    except admin.sites.AlreadyRegistered:
+        pass

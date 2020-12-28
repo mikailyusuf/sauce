@@ -19,13 +19,17 @@ class UserSerializer(serializers.ModelSerializer):
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
     password = serializers.CharField(max_length=8)
+    first_name = serializers.CharField(max_length=200)
+    last_name = serializers.CharField(max_length=200)
 
     class Meta:
         model = User
         fields = (
             'username',
             'email',
-            'password'
+            'password',
+            'last_name',
+            'first_name'
         )
 
 
@@ -121,7 +125,7 @@ class ReserveTicketSerializer(serializers.ModelSerializer):
             try:
                 print("Ticket ID " + ticket_id)
                 ticket = Tickets.objects.get(ticket_id=ticket_id)
-                userTicket = UserTickets.objects.create(user= user,ticket = ticket)
+                userTicket = UserTickets.objects.create(user=user, ticket=ticket)
                 try:
                     userTicket.save()
                 except Exception as e:
@@ -134,17 +138,10 @@ class ReserveTicketSerializer(serializers.ModelSerializer):
         except Exception as e:
             raise ValidationError(str(e))
 
-        return  data
+        return data
 
     class Meta:
         model = ReserveTicket
-        fields = "__all__"
-
-
-
-class TicketSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Tickets
         fields = "__all__"
 
 
@@ -157,4 +154,5 @@ class TicketSerializer(serializers.ModelSerializer):
 class UserTicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserTickets
-        fields = "__all__"
+        fields = ("ticket","date_purchased")
+        depth = 1

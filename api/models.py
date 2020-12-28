@@ -1,12 +1,13 @@
+from django.contrib import auth
 from django.db import models
 
 
 # Create your models here.
-class User(models.Model):
-    username = models.CharField(max_length=255, null=False)
-    email = models.EmailField(max_length=255, null=False)
+class User(auth.models.User):
+    # username = models.CharField(max_length=255, null=False)
+    # email = models.EmailField(max_length=255, null=False)
     is_admin = models.BooleanField(default=False)
-    password = models.CharField(max_length=50, null=False)
+    # password = models.CharField(max_length=50, null=False)
     ifLogged = models.BooleanField(default=False)
     token = models.CharField(max_length=500, null=True, default="")
 
@@ -22,6 +23,7 @@ class Tickets(models.Model):
     expired = models.BooleanField(default=False)
     used = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_created=True, auto_now=True)
+    objects = models.Manager()
 
     def __str__(self):
         return "{} -{}".format(self.start_destination, self.stop_destination)
@@ -33,7 +35,7 @@ class UserTickets(models.Model):
     date_purchased = models.DateTimeField(auto_created=True, auto_now=True)
 
     def __str__(self):
-        return str(self.user)
+        return str(self.date_purchased)
 
 
 class ReserveTicket(models.Model):

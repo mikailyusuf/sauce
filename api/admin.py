@@ -2,9 +2,9 @@ from django.contrib import admin
 
 # Register your models here.
 from django.apps import apps
-from api.models import User, Tickets, UserTickets
+from rest_framework.authtoken.models import TokenProxy
 
-# admin.site.register(User,Tickets,UserTickets)
+from api.models import User, Tickets, UserTickets
 
 models = apps.get_models()
 

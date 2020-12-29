@@ -48,7 +48,9 @@ class CreateToken(APIView):
             print(str(user))
             token = Token.objects.create(user=user)
             print(token.key)
-            return Response(status=status.HTTP_201_CREATED)
+            data = {}
+            data["token"] = str(token.key)
+            return Response(status=status.HTTP_201_CREATED,data=data)
 
 
         except Exception as e:

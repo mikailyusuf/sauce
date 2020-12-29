@@ -154,5 +154,12 @@ class TicketSerializer(serializers.ModelSerializer):
 class UserTicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserTickets
-        fields = ("ticket","date_purchased")
+        fields = ("ticket", "date_purchased", "order_id")
         depth = 1
+
+
+class ChangePasswordSerializer(serializers.Serializer):
+    model = User
+
+    old_password = serializers.CharField(required=True)
+    new_password = serializers.CharField(required=True)

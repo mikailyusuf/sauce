@@ -1,3 +1,5 @@
+import uuid
+
 from django.contrib import auth
 from django.db import models
 
@@ -32,6 +34,7 @@ class Tickets(models.Model):
 class UserTickets(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     ticket = models.ForeignKey(Tickets, on_delete=models.CASCADE)
+    order_id = models.CharField(max_length=255,default=uuid.uuid4,editable=False,unique = True)
     date_purchased = models.DateTimeField(auto_created=True, auto_now=True)
 
     def __str__(self):

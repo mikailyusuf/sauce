@@ -11,13 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dcb485-476a-4d68-8c2b-24201c6c4b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/templates/email/user_reset_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/templates/email/user_reset_password.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sauce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sauce/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,17 +70,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="386" y="199" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609318652991">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="386" y="199" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1609318652991" />
     <state x="544" y="297" width="277" height="207" key="Github.ShareDialog" timestamp="1609163971408">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="544" y="297" width="277" height="207" key="Github.ShareDialog/0.27.1366.741@0.27.1366.741" timestamp="1609163971408" />
-    <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1609239961810">
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1609318513550">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1609239961810" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1609190648216">
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1609318513550" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1609249893976">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1609190648216" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1609249893976" />
   </component>
 </project>

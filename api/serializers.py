@@ -1,7 +1,6 @@
 from uuid import uuid4
 
 from django.db.models import Q
-from requests import models
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework.validators import UniqueValidator
@@ -45,7 +44,6 @@ class UserLoginSerializer(serializers.ModelSerializer):
         password = data.get("password", None)
         if not user_id and not password:
             raise ValidationError("Details not entered.")
-        user = None
         # if the email has been passed
         if '@' in user_id:
             user = User.objects.filter(

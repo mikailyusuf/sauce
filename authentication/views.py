@@ -2,7 +2,7 @@ import jwt
 from django.contrib.sites.shortcuts import get_current_site
 from django.shortcuts import render
 from django.urls import reverse
-from rest_framework import generics, status, views
+from rest_framework import generics, status, views, permissions
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -11,7 +11,8 @@ from drf_yasg import openapi
 from authentication import Utils
 from authentication.models import User
 from authentication.renderers import UserRenderer
-from authentication.serializers import RegisterSerializer, EmailVerificationSerializer
+from authentication.serializers import RegisterSerializer, EmailVerificationSerializer, LoginSerializer, \
+    LogoutSerializer
 
 
 class RegisterView(generics.GenericAPIView):
@@ -62,3 +63,25 @@ class VerifyEmail(views.APIView):
             return Response({'error': 'Activation Expired'}, status=status.HTTP_400_BAD_REQUEST)
         except jwt.exceptions.DecodeError as identifier:
             return Response({'error': 'Invalid token'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class LoginAPIView(generics.GenericAPIView):
+    serializer_class = LoginSerializer
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+class LogoutAPIView(generics.GenericAPIView):
+    serializer_class = LogoutSerializer
+
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        message = {"success":"User Successfully Logged Out"}
+        return Response(data=message,status=status.HTTP_204_NO_CONTENT)

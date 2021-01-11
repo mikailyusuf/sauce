@@ -11,40 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9dcb485-476a-4d68-8c2b-24201c6c4b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/authentication/Utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/migrations/0002_auto_20210111_1419.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/renderers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sauce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sauce/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sauce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sauce/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +83,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1609318513550" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1609340408394">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1610375304070">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1609340408394" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1610375304070" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610371981753">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

@@ -23,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '2#12^s$ok5*xh*j%!cd)_fb0wwp*b2&6ws@kle(@(ovnn@n2m+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 AUTH_USER_MODEL = 'authentication.User'
 
-# ALLOWED_HOSTS = ['mikail-sauce.herokuapp.com', '127.0.0.1']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mikail-sauce.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -57,7 +56,7 @@ SWAGGER_SETTINGS = {
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=10),
-    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=10),
 }
 
 MIDDLEWARE = [

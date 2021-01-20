@@ -18,7 +18,7 @@ from authentication.serializers import RegisterSerializer, EmailVerificationSeri
 class RegisterView(generics.GenericAPIView):
     serializer_class = RegisterSerializer
 
-    renderer_classes = (UserRenderer,)
+    # renderer_classes = (UserRenderer,)
 
     def post(self, request):
         user = request.data
